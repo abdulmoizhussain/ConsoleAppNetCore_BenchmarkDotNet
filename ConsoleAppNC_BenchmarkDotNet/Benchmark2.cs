@@ -22,7 +22,7 @@ namespace ConsoleAppNC_BenchmarkDotNet
 
   public static class ExpandoHelper
   {
-    public static ExpandoObject ToExpando<T>(this T obj) where T : class
+    public static ExpandoObject ToExpando<T>(this T obj) where T : class, new()
     {
       IDictionary<string, object> expando = new ExpandoObject();
       foreach (var propertyInfo in typeof(T).GetProperties())
