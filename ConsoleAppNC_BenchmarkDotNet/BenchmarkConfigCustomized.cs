@@ -2,9 +2,9 @@
 
 namespace ConsoleAppNC_BenchmarkDotNet
 {
-  class BenchmarkConfig : ManualConfig
+  class BenchmarkConfigCustomized : ManualConfig
   {
-    public BenchmarkConfig()
+    public BenchmarkConfigCustomized()
     {
       var ratioStyle = BenchmarkDotNet.Columns.RatioStyle.Percentage;
 
